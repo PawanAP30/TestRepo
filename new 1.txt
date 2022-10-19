@@ -1,0 +1,5 @@
+const filtered = subjects.filter( (s) =>
+    Object.entries(filters).every( ([type, expression]) =>
+      subjectFilterPredicates[type as SubjectFilterPredicateType](expression)(s,),
+    ),
+  );
